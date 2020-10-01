@@ -134,10 +134,7 @@ import { Component, OnInit } from '@angular/core';
   `
   ,
   styles: [ `
-  .hero  {
-    background-image: url('/assets/IMG/BackGMain.jpg') !important;
-    background-size: cover; 
-    background-position: center center;
+
   }`
 
   
