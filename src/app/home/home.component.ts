@@ -17,50 +17,64 @@ import { Component, OnInit } from '@angular/core';
    </div>
   </section>
   <br>
-  
-  <div class="tile is-parent">
-  <div class="tile is-vertical is-8">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child notification is-dark">
-          <p class="subtitle">A little bit about me</p>
-          <p class="body">lol</p>
-        </article>
-        
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-black">
-          <p class="title">Im not Photogenic 😢   </p>
-          <figure class="image is-4by3">
-            <img src="assets/IMG/BackGMain.jpg">
-          </figure>
-        </article>
+  <div class="cards-2" >
+    <div class="card">
+      <div class="titles"> A photo of myself </div> 
+      <div class="image is-4by3"> 
+        <img src="assets/IMG/Profile-pick.jpg ">
       </div>
     </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-black">
-        <p class="title">Wide tile</p>
-        <p class="subtitle">Aligned with the right tile</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </article>
-    </div>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-dark">
-      <div class="content">
-        <p class="title">Tall tile</p>
-        <p class="subtitle">With even more content</p>
-        <div class="content">
-          <!-- Content -->
+    <div class="card">
+      <div class="titles" > 
+        <u>Where to find me</u>
+      </div>
+      <div class="subtitle-2" > 
+        <u>Links: </u>
+      </div>
+      <div class="link"> 
+      <a class="link" href="https://www.facebook.com/kyle.havenga.5/"> - Facebook</a>
+      </div>
+      <div class="link"> 
+      <a class="link" href="https://twitter.com/Kyle41870170/"> - Twitter</a>
+      </div>
+      <div class="link"> 
+      <a class="link" href="https://www.instagram.com/kyle_havenga_/?hl=en"> - Instagram</a>
+      </div>
+       
+      <div class="github-link" > 
+         <div class="titles" > 
+            <u>Github account:</u>
+         </div>
+      </div>
+      <div class="subtitle-2" > 
+        <div class="link"> 
+          <a class="link" href="https://github.com/KyleHavenga/"> - Github</a>
         </div>
       </div>
-    </article>
+      
+      
+
+
+    </div>
+
+    <div class="card ">
+      <div class="github-link" > 
+        <div class="titles" > 
+          <u>Who am I?</u>
+        </div>
+        <div class="text-body" > 
+          I am a young aspiring programmer who is always looking for new 
+          adventures when it comes to what i love. I have a great passion 
+          for programming and all that it entails as well as all the fields 
+          that is accompanies.
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
+  <br> 
+
   <div class="tile is-parent">
-    <div class="tile is-parent">
+    
     
       <article class="tile is-child notification is-dark " >
         <p class="title">Skills</p>    
@@ -121,15 +135,14 @@ import { Component, OnInit } from '@angular/core';
         <p class="progress-value has-text-black">33%</p>
         </div>
         
-
+        
 
         
       </article>
-    </div>
+    
+
+    
   </div>
-
-
-
 
   `
   ,
@@ -147,5 +160,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  
 }

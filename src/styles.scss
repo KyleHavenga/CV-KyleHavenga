@@ -7,28 +7,13 @@
   .progress-value {
     position: absolute;
     top: 0;
-    left: 98%;
+    left: 96%;
     transform: translateX(-50%);
-    font-size: calc(1rem / 1.5);
     line-height: 1rem;
-    font-weight: bold;
-    
+    font-weight: bold; 
   }
   
-  .progress.is-small+.progress-value {
-    font-size: calc(0.75rem / 1.5);
-    line-height: 0.75rem;
-  }
-  
-  .progress.is-medium+.progress-value {
-    font-size: calc(1.25rem / 1.5);
-    line-height: 1.25rem;
-  }
-  
-  .progress.is-large+.progress-value {
-    font-size: calc(1.5rem / 1.5);
-    line-height: 1.5rem;
-  }
+
 
   .hero  {
     background-image: url(assets/IMG/BackGMain.jpg) !important;
@@ -46,21 +31,28 @@
   .tile-grid {
     margin-right: -4px;
     overflow: hidden;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minimax(2400px ,1fr));
   }
   
   .tile {
-    background-color: #f1f1f1;
+    background-color: grey;
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     background-clip: padding-box;
     border-color: transparent;
     border-style: solid;
     border-width: 0 4px 4px 0;
+    position: relative;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   
   .tile-column-3 {
     width: 25%;
     background-color: grey;
+    border-radius: 5px ;
+    color: black;
   }
   
   .tile-column-4 {
@@ -77,12 +69,24 @@
   
   .tile-column-12 {
     width: 100%;
+    height: 100%;
+    
+  }
+
+  .tile-column-14 {
+    width: 100%;
+    height: 100;
+    background-color: gray;
+    border-radius: 5px ;
+    color: white;
+    margin-right: 12px;
   }
   
   .tile-grid-item {
     float: left;
     position: relative;
     padding-bottom: 30%;
+    margin-right: 12px;
   }
   
   .tile-inner-padded {
@@ -96,6 +100,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    margin-right: 12px;
   }
   
   /* Square */
@@ -135,3 +140,120 @@
   .u-align-middle {
     vertical-align: middle;
   }
+ 
+  .footer {
+    clear: left;
+  }
+  
+
+  .card {
+    background-color: grey;
+    color: white;
+    padding: 1rem;
+    height: 100%; /*Adding height to the cards to ensure text is not cut out */
+    margin-right: 12px;
+    margin-left: 12px ;
+    margin-top: 12px;
+  }
+
+
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 1200px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  @media (min-width: 600px) {
+    .cards-2 { grid-template-columns: repeat(1, 1fr); }
+    .titles {font-size: x-large;}
+    .subtitle-2 { font-size: medium;}
+    .link {font-size: small;}
+    .progress-value {font-size: small;}
+    .text-body {font-size: large;}
+  }
+
+  @media (min-width: 800px) {
+    .cards-2 { grid-template-columns: repeat(3, 1fr); }
+    .titles {font-size: xxx-large;}
+    .subtitle-2 {font-size: xx-large;}
+    .link {font-size: x-large;}
+    .progress-value {font-size: large;}
+    .text-body {font-size: x-large;}
+    .subtitle-2 {font-size: xx-large;}
+  }
+
+  @media (min-width: 1500px) {
+   
+    .text-body {font-size: xx-large;}
+    .link {font-size: xx-large;}
+  }
+
+
+
+  .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+
+  }
+
+  .cards-2 {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 45%;
+    top: 35%
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  /* had to use titles as title is used by the bulma framework*/
+  .titles {   
+    font-weight: bold;
+  }
+
+  .subtitle-2 { 
+
+    font-weight: bold;
+  }
+
+  .link {
+    color:white ;
+    font-weight: large;
+    font-weight: bold;
+
+  }
+
+  .text-body { 
+    color:white;
+  }
+  
+  
+
+  
