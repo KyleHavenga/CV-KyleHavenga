@@ -7,6 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { CVComponent } from './cv/cv.component';
+import {HttpClientModule} from '@angular/common/http';
+import { GithubreposService } from './githubrepos.service';
+import { CommonModule } from '@angular/common';  
+import { GithubreposComponent } from './githubrepos/githubrepos.component';
+
 
 @NgModule({
   declarations: [
@@ -14,15 +21,21 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent,
+    CVComponent,
+    GithubreposComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [
+    GithubreposService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -12,5 +13,6 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'CV-KyleHavenga';
+
+  
 }

@@ -16,10 +16,9 @@ import { Component, OnInit } from '@angular/core';
     </div>
    </div>
   </section>
-  <br>
   <div class="cards-2" >
     <div class="card">
-      <div class="titles"> A photo of myself </div> 
+      <div class="titles-pic"> <U> A photo of myself </U> </div> 
       <div class="image is-4by3"> 
         <img src="assets/IMG/Profile-pick.jpg ">
       </div>
@@ -72,10 +71,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
   </div>
   <br> 
-
   <div class="tile is-parent">
-    
-    
       <article class="tile is-child notification is-dark " >
         <p class="title">Skills</p>    
         <p class="subtitle">These bars indicate how confident I am in these fields!</p>  
@@ -140,9 +136,9 @@ import { Component, OnInit } from '@angular/core';
         
       </article>
     
+  </div>  
 
-    
-  </div>
+ 
 
   `
   ,

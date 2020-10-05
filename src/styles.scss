@@ -13,8 +13,6 @@
     font-weight: bold; 
   }
   
-
-
   .hero  {
     background-image: url(assets/IMG/BackGMain.jpg) !important;
     background-size: cover; 
@@ -154,6 +152,8 @@
     margin-right: 12px;
     margin-left: 12px ;
     margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
 
@@ -168,15 +168,22 @@
   @media (min-width: 600px) {
     .cards-2 { grid-template-columns: repeat(1, 1fr); }
     .titles {font-size: x-large;}
+    
     .subtitle-2 { font-size: medium;}
     .link {font-size: small;}
     .progress-value {font-size: small;}
     .text-body {font-size: large;}
+    .titles-pic {font-size : xx-large }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
+     .titles-pic {font-size : xx-large}
+  }
+
+  @media (min-width: 1000px) {
     .cards-2 { grid-template-columns: repeat(3, 1fr); }
     .titles {font-size: xxx-large;}
+    .titles-pic {font-size : xxx-large }
     .subtitle-2 {font-size: xx-large;}
     .link {font-size: x-large;}
     .progress-value {font-size: large;}
@@ -238,6 +245,11 @@
     font-weight: bold;
   }
 
+  .titles-CV {   
+    font-weight: bold;
+  }
+
+
   .subtitle-2 { 
 
     font-weight: bold;
@@ -253,6 +265,44 @@
   .text-body { 
     color:white;
   }
+
+  table, th, td {
+    border: 1px solid black;
+    margin-left: 12px ;
+    margin-right: 12px;
+    max-width: 98%;
+    background-color: white;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  table {
+    border-spacing: 5px;
+  }
+
+  .title-CV-all { 
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+
+  .titles-pic {
+    
+    font-weight : bold ;
+  }
+
+
   
   
 

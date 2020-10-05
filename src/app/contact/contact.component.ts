@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-contact',
   template: `
+  <br>
   <div class="tile is-parent">
     <div class="tile is-parent">
       <article class="tile is-child notification is-dark " >
