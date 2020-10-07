@@ -4,11 +4,18 @@ import { GithubreposService } from '../githubrepos.service';
 @Component({
   selector: 'app-githubrepos',
   template: `
-    <div *ngIf="repos" > 
-       <div *ngFor="let repos of repos" > 
-          {{repos.name}}
-       </div>
+  <div class="title-3">
+    <u> All of my github repos </u>
+  </div>
+  <section class="section" > 
+    <div class="container">
+      <div class="cards" *ngIf="repos">
+        <div class="card" *ngFor="let repos of repos" > 
+          <a class="link2" href="{{repos.html_url}}"> - {{repos.name}}</a>
+        </div>      
+      </div>
     </div>
+  </section>
   `,
   styles: [
   ]

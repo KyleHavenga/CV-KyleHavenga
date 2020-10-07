@@ -55,7 +55,9 @@
               "../CV-KyleHavenga/node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {

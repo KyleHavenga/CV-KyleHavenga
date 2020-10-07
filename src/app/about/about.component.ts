@@ -21,16 +21,14 @@ import { Component, OnInit } from '@angular/core';
   </div> 
   <div class="tile is-parent">
   
-    <table style="width:100%">
+    <table class="mytable">
       <tr>
         <th>Name</th>
         <td>Kyle</td>
-
       </tr>
       <tr>
         <th>Surname</th>
         <td>Havenga</td>
-
       </tr>
       <tr>
         <th>DOB</th>

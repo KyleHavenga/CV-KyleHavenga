@@ -11,4 +11,6 @@ export class GithubreposService {
   getRepos () {
     return this.http.get('https://api.github.com/users/KyleHavenga/repos');
   }
+
+  
 }

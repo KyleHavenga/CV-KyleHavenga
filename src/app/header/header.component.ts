@@ -23,13 +23,14 @@ import { Component, OnInit } from '@angular/core';
           <a class="navbar-item" routerLink="/">Home</a>
           <a class="navbar-item" routerLink="/contact">Contact</a>
           <a class="navbar-item" routerLink="/about">About me</a>
-          <a class="navbar-item" routerLink="/CV">Downlaod CV</a>
+          <a class="navbar-item" routerLink="/CV">Download CV</a>
           <a class="navbar-item" routerLink="/githubrepos">Github repos</a>
           </div>
          </div>
       </div>
     </header>
-        
+    
+    
   `,
 
   

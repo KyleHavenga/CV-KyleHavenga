@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-.progress-wrapper {
+  .progress-wrapper {
     position: relative;
   }
   
@@ -39,44 +39,9 @@
     -moz-background-clip: padding;
     background-clip: padding-box;
     border-color: transparent;
-    border-style: solid;
     border-width: 0 4px 4px 0;
     position: relative;
     margin-left: 12px;
-    margin-right: 12px;
-  }
-  
-  .tile-column-3 {
-    width: 25%;
-    background-color: grey;
-    border-radius: 5px ;
-    color: black;
-  }
-  
-  .tile-column-4 {
-    width: 33.33%;
-  }
-  
-  .tile-column-6 {
-    width: 50%;
-  }
-  
-  .tile-column-8 {
-    width: 66.66%;
-  }
-  
-  .tile-column-12 {
-    width: 100%;
-    height: 100%;
-    
-  }
-
-  .tile-column-14 {
-    width: 100%;
-    height: 100;
-    background-color: gray;
-    border-radius: 5px ;
-    color: white;
     margin-right: 12px;
   }
   
@@ -156,48 +121,59 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
+  .link-ISS {
+    font-weight: bold;
+    color: white;
+  }
+
 
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
+    .cards-2 { grid-template-columns: repeat(1, 1fr); }
+    .titles {font-size: x-large;}
+    .subtitle-2 { font-size: medium;}
+    .link {font-size: x-large;}
+    .link2 {font-size: small;}
+    .progress-value {font-size: small;}
+    .text-body {font-size: large;}
+    .titles-pic {font-size : xx-large }
+    table, th, td {max-width: 97%;}
+    .title-3 {font-size: xx-large;}
   }
 
   @media (min-width: 1200px) {
     .cards { grid-template-columns: repeat(4, 1fr); }
-  }
-
-  @media (min-width: 600px) {
-    .cards-2 { grid-template-columns: repeat(1, 1fr); }
-    .titles {font-size: x-large;}
-    
-    .subtitle-2 { font-size: medium;}
-    .link {font-size: small;}
-    .progress-value {font-size: small;}
-    .text-body {font-size: large;}
-    .titles-pic {font-size : xx-large }
-  }
-
-  @media (min-width: 1200px) {
-     .titles-pic {font-size : xx-large}
-  }
-
-  @media (min-width: 1000px) {
-    .cards-2 { grid-template-columns: repeat(3, 1fr); }
-    .titles {font-size: xxx-large;}
-    .titles-pic {font-size : xxx-large }
-    .subtitle-2 {font-size: xx-large;}
-    .link {font-size: x-large;}
-    .progress-value {font-size: large;}
-    .text-body {font-size: x-large;}
-    .subtitle-2 {font-size: xx-large;}
+    .titles-pic {font-size : xx-large}
   }
 
   @media (min-width: 1500px) {
    
     .text-body {font-size: xx-large;}
-    .link {font-size: xx-large;}
+    .linl {font-size: small;}
+    table, th, td {max-width: 99%;}
+    
   }
 
 
+  @media (min-width: 1000px) {
+    .cards-2 { grid-template-columns: repeat(3, 1fr); }
+    .titles {font-size: xxx-large;}
+    .title-3 {font-size: xxx-large;}
+    .titles-pic {font-size : xxx-large }
+    .subtitle-2 {font-size: xx-large;}
+    .link {font-size: xx-large;}
+    .progress-value {font-size: large;}
+    .text-body {font-size: x-large;}
+    .subtitle-2 {font-size: xx-large;}
+    table, th, td {max-width: 98%;}
+    .linl {font-size: medium;}
+    
+  }
+  .link2 {
+    color : white ;
+  }
+
+  
 
   .cards {
     max-width: 100%;
@@ -221,14 +197,13 @@
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     position: absolute;
     left: 45%;
     top: 35%
   }
   
-  /* Safari */
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -239,10 +214,13 @@
     100% { transform: rotate(360deg); }
   }
 
-
-  /* had to use titles as title is used by the bulma framework*/
   .titles {   
     font-weight: bold;
+  }
+
+  .title-3 { 
+    font-weight: bold;
+    text-align: center;
   }
 
   .titles-CV {   
@@ -270,7 +248,6 @@
     border: 1px solid black;
     margin-left: 12px ;
     margin-right: 12px;
-    max-width: 98%;
     background-color: white;
   }
 
@@ -280,7 +257,7 @@
   }
 
   th, td {
-    padding: 15px;
+    padding: 10px;
   }
 
   th {
@@ -289,6 +266,11 @@
 
   table {
     border-spacing: 5px;
+  
+  }
+
+  .mytable {
+    width: 100%;
   }
 
   .title-CV-all { 
@@ -301,6 +283,26 @@
     
     font-weight : bold ;
   }
+
+  .iframe1 {
+    width: 99%;
+    margin-left: 0.5%;
+    height: 750px;
+  }
+
+  .tile {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    
+  }
+  .tile, .card {
+    background: linear-gradient(to left, grey, black); 
+    height: 100%;
+  }
+
+  
+
+  
 
 
   
